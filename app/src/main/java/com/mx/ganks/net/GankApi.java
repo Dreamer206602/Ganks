@@ -22,7 +22,7 @@ public class GankApi {
             @Override
             public void onResponse(Response<CommonDate> response, Retrofit retrofit) {
                 CommonDate commonDate1=response.body();
-                if(!commonDate1.isError()){
+                if(response.isSuccess()){
                     //数据正确，把数据返回
                     Log.d("getCommonData",commonDate1.toString());
                     callBack.onSuccess(type,key,commonDate1);
