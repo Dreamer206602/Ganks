@@ -4,7 +4,6 @@ import com.mx.ganks.model.CommonDate;
 
 import retrofit.Call;
 import retrofit.http.GET;
-import retrofit.http.Part;
 import retrofit.http.Path;
 
 /**
@@ -14,5 +13,5 @@ import retrofit.http.Path;
 public interface GankService {
     //http://gank.io/api/data/Android/10/1
     @GET("dada/{type}/{count}/{pageIndex}")
-    Call<CommonDate> getCommonDate(@Part("type") String type, @Path("count") int count, @Path("pageIndex") int pageIndex);
+    Call<CommonDate> getCommonDate(@Path("type") String type, @Path("count") int count, @Path("pageIndex") int pageIndex);
 }

@@ -169,7 +169,7 @@ public class RefreshLayout extends SwipeRefreshLayout implements AbsListView.OnS
      * 设置装填
      * @param loading
      */
-    private void setLoading(boolean loading) {
+    public void setLoading(boolean loading) {
         isLoading=loading;
         if(isLoading){
             mListView.addFooterView(mListViewFooter);

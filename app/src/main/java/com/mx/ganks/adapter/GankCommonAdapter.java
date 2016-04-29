@@ -29,7 +29,7 @@ public class GankCommonAdapter extends CommonAdapter<CommonDate.ResultsEntity> {
     private Animation push_left_in, push_right_in;
     private DisplayImageOptions mOptions;
 
-    public GankCommonAdapter(@NonNull Context context, List<CommonDate.ResultsEntity> datas, @NonNull int layoutId) {
+    public GankCommonAdapter(@NonNull Context context, List<CommonDate.ResultsEntity> datas) {
         super(context, datas, R.layout.item_common);
         //创建默认的ImageLoafer配置参数
         ImageLoaderConfiguration configuration = ImageLoaderConfiguration.createDefault(context);
