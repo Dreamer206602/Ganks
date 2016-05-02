@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         public void onSuccess(String flag, String key, CommonDate commonDate) {
             Log.d("Main", "Success");
             stopAllState();
-            if (flag != currentFlag) return;
+           // if (flag != currentFlag) return;
             if (commonDate.isError()) {
                 ToastUtils.show(MainActivity.this, "数据加载出错");
                 return;

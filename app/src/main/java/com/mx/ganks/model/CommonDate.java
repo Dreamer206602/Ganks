@@ -30,7 +30,7 @@ public class CommonDate implements Serializable{
     }
 
     public static class ResultsEntity implements Serializable{
-        public static final long serialVersionUID=-5285218081391954727L;
+        private static final long serialVersionUID = -5285218081391954727L;
         private String _id;
         private String  _ns;
         private String createdAt;
